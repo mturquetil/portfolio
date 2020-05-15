@@ -1,0 +1,19 @@
+@import '~/styles/variables.scss';
+
+.input {
+	min-height: 200px;
+	padding: 10px;
+	background: $light-white-color;
+	border: 1px solid rgba($border-color, 0.2);
+
+	&:focus {
+		border: 1px solid rgba($blue-color, 0.5);
+		background: $white-color;
+		outline: none;
+	}
+
+	&:placeholder {
+		color: $grey-color;
+	}
+}
+

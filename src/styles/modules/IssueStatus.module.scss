@@ -1,0 +1,11 @@
+.issueStatus {
+	display: flex;
+
+	.content {
+		display: flex;
+		flex: 1;
+		margin-left: 10px;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

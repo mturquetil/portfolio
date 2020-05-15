@@ -1,0 +1,55 @@
+@import '~/styles/variables.scss';
+@import '~/styles/functions.scss';
+
+
+.container {
+	position: relative;
+	display: inline-block;
+
+	.select {
+		padding: 6px 10px;
+		border-radius: $border-radius;
+		cursor: pointer;
+		background: $grey-gradient;
+		display: inline-flex;
+		align-items: center;
+
+		label {
+			color: $grey-color;
+			padding-right: 3px;
+		}
+	}
+
+	.list {
+		position: absolute;
+		top: calc(100% + 5px);
+		background: $white-color;
+		border-radius: $border-radius;
+		width: 100%;
+		overflow: hidden;
+
+		li {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			padding: 8px 4px;
+
+			&:not(:last-of-type) {
+				border-bottom: border($alpha: 0.05);
+			}
+
+			.icon {
+				padding: 0 8px;
+				font-weight: bold;
+			}
+
+			.hidden {
+				opacity: 0;
+			}
+
+			&:hover {
+				background-color: $light-white-color;
+			}
+		}
+	}
+}

@@ -1,16 +1,17 @@
-import Head from 'next/head'
+import React from 'react'
+import store from '~/store'
+import { Provider } from 'react-redux'
 
-const HomePage = () => {
-	return (
-		<div className="container">
-			<Head>
-				<title>portfolio-front</title>
-			</Head>
-			<main>
-				portfolio-front
-			</main>
-		</div>
-	)
+import HomePage from '~/pages/HomePage'
+
+class App extends React.Component {
+	render () {
+		return (
+			<Provider store={store}>
+				<HomePage />
+			</Provider>
+		)
+	}
 }
 
-export default HomePage
+export default App

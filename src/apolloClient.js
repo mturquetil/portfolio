@@ -1,5 +1,5 @@
-import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client'
-import fetch from 'isomorphic-unfetch'
+import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
+import fetch from 'isomorphic-unfetch';
 
 export default function createApolloClient(initialState, ctx) {
   // The `ctx` (NextPageContext) will only be present on the server.
@@ -12,5 +12,5 @@ export default function createApolloClient(initialState, ctx) {
       fetch,
     }),
     cache: new InMemoryCache().restore(initialState),
-  })
+  });
 }

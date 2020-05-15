@@ -1,0 +1,16 @@
+@import '~/styles/functions.scss';
+@import '~/styles/variables.scss';
+
+.button {
+	padding: 9px 13px;
+	border: border();
+	border-radius: $border-radius;
+	background: $green-gradient;
+	color: $white-color;
+	cursor: pointer;
+	transition: 0.2s;
+
+	&:hover {
+		border: border($alpha: 0.5);
+	}
+}

@@ -1,0 +1,21 @@
+@import '~/styles/variables.scss';
+
+.input {
+	min-height: 34px;
+	padding: 0px 10px;
+	background: $light-white-color;
+	border: 1px solid rgba($border-color, 0.2);
+	transition: 0.2s;
+
+	&:focus {
+		border: 1px solid rgba($blue-color, 0.5);
+		background: $white-color;
+		outline: none;
+		transition: 0.2s;
+	}
+
+	&:placeholder {
+		color: $grey-color;
+	}
+}
+

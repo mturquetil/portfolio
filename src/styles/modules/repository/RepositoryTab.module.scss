@@ -1,0 +1,33 @@
+@import '~/styles/variables.scss';
+@import '~/styles/functions.scss';
+
+
+.container {
+	display: inline-flex;
+	align-items: center;
+	border: 2px solid transparent;
+	border-radius: $border-radius;
+	padding: 6px 8px;
+	cursor: pointer;
+	user-select: none;
+	transition: all 0.2s;
+
+	&:hover {
+		color: $grey-color;
+	}
+
+	span {
+		margin-left: 5px;
+	}
+}
+
+.active {
+	border: border();
+	border-top: 3px solid $orange-color;
+	background: $white-color;
+	color: $grey-color;
+}
+
+.inactive {
+	color: rgba($grey-color, 0.6);
+}

@@ -1,0 +1,13 @@
+@import '~/styles/variables.scss';
+
+.issueState {
+	background: $green-color;
+	border-radius: 50px;
+	display: inline-flex;
+	align-items: center;
+	padding: 3px;
+
+	.state {
+		margin: 0 12px 0 8px;
+	}
+}

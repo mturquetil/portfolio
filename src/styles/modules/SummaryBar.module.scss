@@ -1,0 +1,18 @@
+@import '~/styles/variables.scss';
+
+.summaryBar {
+	border-radius: $border-radius;
+
+	.informations {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 20px;
+	}
+
+	.underline {
+		border-radius: $border-radius;
+		margin-top: 10px;
+		background-color: #F1E05A;
+		height: 5px;
+	}
+}

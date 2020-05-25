@@ -1,0 +1,24 @@
+@import '~/styles/variables.scss';
+@import '~/styles/functions.scss';
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	color: $grey-color;
+
+	svg {
+		min-width: 18px;
+		min-height: 18px;
+	}
+
+	.content {
+		white-space: nowrap;
+		color: $blue-color;
+	}
+
+	*:not(:first-child) {
+		padding: 0 5px;
+	}
+}

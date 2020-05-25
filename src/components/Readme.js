@@ -1,29 +1,50 @@
 import { Component } from 'react'
 import Octicon, { getIconByName } from '@primer/octicons-react'
 
-import styles from '~/styles/modules/Readme.module.scss'
+import styles from '~/styles/modules/components/Readme.module.scss'
 
 class Readme extends Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			shields: [{
+				label: 'disponibilité',
+				value: 'caen',
+				color: 'brightgreen'
+			}, {
+				label: 'status',
+				value: 'en recherche d\'emploi',
+				color: 'blueviolet'
+			}],
+
+			githubURL: 'https://github.com/mturquetil'
+		}
+	}
 	render() {
-		const { className } = this.props
+		const { id, className } = this.props
 
 		return (
-			<div className={`${className} ${styles.readme}`}>
+			<div id={id} className={`${className} ${styles.readme}`}>
 				<div className={`bold-text ${styles.header}`}>
 					<Octicon icon={getIconByName('book')} />
 					README.md
 				</div>
 				<div className={styles.content}>
-					<img src="/profil.jpg" />
+					<img className={styles.profile} src="/profil.jpg" />
 					<p className={`bold-text ${styles.title}`}>Maxime Turquetil</p>
-					<a className={`${styles.github} margin-top`} href="https://github.com/mturquetil" target="_blank">
+					<div className={`margin-top-l ${styles.shields}`}>
+						{this.state.shields.map((shield, idx) => (
+							<img className={styles.shield} key={`shield-${idx}`} src={`https://img.shields.io/badge/${shield.label}-${shield.value}-${shield.color}`} />
+						))}
+					</div>
+					<a className={`${styles.github} margin-top-l`} href={this.state.githubURL} target="_blank">
 						<span className="bold-text black-color">Mon compte</span>
 						<Octicon icon={getIconByName('mark-github')} />
 					</a>
-					<div className={`${styles.description} margin-top l-text`}>
+					<div className={`${styles.description} margin-top-l l-text`}>
 						<p><span className="bold-text">Maxime Turquetil</span> est une librairie fullstack de <span className="bold-text">23 ans</span> écrite en code génétique.</p>
 
-						<p className="margin-top">
+						<p className="margin-top-m">
 							Passionnée par les évolutions technologiques et le monde <span className="bold-text">open source</span>, elle essaye de se tenir le plus à jour pour pouvoir répondre aux défis imposés par notre siècle.
 						Ses utilisations multiples vont de la confection de sites web, d’applications mobiles au développement d’outils métier spécifique.
 							Cette librairie est également en cours de développement de la fonctionnalité <span className="bold-text">DevOps</span>.

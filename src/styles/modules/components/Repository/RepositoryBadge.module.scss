@@ -1,0 +1,33 @@
+@import '~/styles/mixins.scss';
+@import '~/styles/variables.scss';
+@import '~/styles/functions.scss';
+
+.container {
+	display: inline-flex;
+	border-radius: $border-radius;
+	overflow: hidden;
+	justify-content: flex-end;
+
+	.content {
+		display: flex;
+		align-items: center;
+		padding: 4px 10px;
+	}
+
+	.label {
+		background: $grey-gradient;
+		border-right: border();
+
+		.icon {
+			margin-right: 5px;
+
+			@include mobile {
+				margin-right: 0px;
+			}
+		}
+	}
+
+	.value {
+		background: $white-color;
+	}
+}

@@ -1,0 +1,37 @@
+@import '~/styles/mixins.scss';
+@import '~/styles/variables.scss';
+
+.issueStatus {
+	display: flex;
+
+	@include mobile {
+		flex-direction: column;
+	}
+
+	.content {
+		display: flex;
+		flex: 1;
+		margin-left: 10px;
+		align-items: center;
+		justify-content: space-between;
+
+		.opened {
+			@include mobile {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.issueState {
+		background: $green-color;
+		border-radius: 50px;
+		display: inline-flex;
+		width: fit-content;
+		align-items: center;
+		padding: 3px;
+
+		.state {
+			margin: 0 12px 0 8px;
+		}
+	}
+}

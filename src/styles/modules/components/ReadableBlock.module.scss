@@ -1,0 +1,52 @@
+@import '~/styles/mixins.scss';
+
+.readableBlock {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 50px;
+	min-width: 130px;
+
+	@include mobile {
+		width: 100%;
+	}
+
+	@include tablet {
+		width: 50%;
+	}
+
+	@include desktop {
+		width: 33%;
+	}
+
+	.title {
+		margin-top: 15px;
+	}
+
+	.period {
+		margin-top: 8px;
+	}
+
+	.content {
+		font-family: Lora;
+		line-height: 1.5;
+		font-size: 16px;
+		text-align: left;
+		width: 80%;
+	}
+
+	.ArticleReader {
+		transform: translateY(100%);
+		transition: 0.7s all;
+
+		&.active {
+			transform: translateY(0%);
+		}
+	}
+
+	.logo {
+		width: 100px;
+		height: 100px;
+	}
+}

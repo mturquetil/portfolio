@@ -1,0 +1,7 @@
+@import '~/styles/mixins.scss';
+
+.tags {
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
+}

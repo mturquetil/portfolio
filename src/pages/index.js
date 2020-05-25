@@ -1,17 +1,13 @@
-import React from 'react'
-import store from '~/store'
-import { Provider } from 'react-redux'
+import { Component } from 'react'
 
-import HomePage from '~/pages/HomePage'
+import RepositoryCodePage from '~/pages/Repository/CodePage.js'
 
-class App extends React.Component {
+class CodePage extends Component {
 	render () {
 		return (
-			<Provider store={store}>
-				<HomePage />
-			</Provider>
+			<RepositoryCodePage />
 		)
 	}
 }
 
-export default App
+export default CodePage

@@ -1,0 +1,18 @@
+@import '~/styles/mixins.scss';
+
+.RepositoryStatus {
+	display: flex;
+	align-items: center;
+
+	@include mobile-tablet {
+		display: block;
+
+		.LastCommitBar {
+			margin-top: 15px;
+		}
+	}
+
+	.select {
+		margin-right: 14px;
+	}
+}

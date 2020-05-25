@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-import styles from '~/styles/modules/Tag.module.scss'
+import styles from '~/styles/modules/components/Tag.module.scss'
 
 class Tag extends Component {
 	render() {

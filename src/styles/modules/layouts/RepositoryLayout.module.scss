@@ -1,0 +1,78 @@
+@import '~/styles/mixins.scss';
+@import '~/styles/functions.scss';
+@import '~/styles/variables.scss';
+
+$page-width: 80%;
+
+.repository {
+	height: 10000px;
+
+	.header {
+		background-color: $light-white-color;
+		border-bottom: border();
+
+		.headerContainer {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			width: $page-width;
+			margin: 0 auto;
+
+			.topLine {
+				margin-top: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				flex: 0.7 0 0px;
+
+				@include mobile-tablet {
+					flex-direction: column;
+				}
+
+				.RepositoryTitle {
+					@include mobile-tablet {
+						margin-top: 10px;
+						justify-content: center;
+					}
+
+					@include mobile {
+						font-size: $font-size-l;
+					}
+				}
+
+				.badges {
+					flex: 1 1 0px;
+					text-align: right;
+					margin: -5px;
+
+					@include mobile-tablet {
+						margin: 10px 0 0 0;
+						flex-direction: column;
+						text-align: center;
+					}
+
+					.badge {
+						margin: 5px;
+					}
+				}
+			}
+
+			.bottomLine {
+				min-height: 30px;
+				margin: 20px 0 10px 0;
+
+				.tab:not(:last-child) {
+					margin-right: 10px;
+				}
+			}
+		}
+
+	}
+
+	.pageContainer {
+		width: $page-width;
+		margin: 0 auto;
+	}
+}

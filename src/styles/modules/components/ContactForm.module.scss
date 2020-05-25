@@ -1,0 +1,13 @@
+.ContactForm {
+	text-align: center;
+
+	.inputs {
+		display: flex;
+		flex-direction: column;
+
+		.button {
+			width: fit-content;
+			align-self: flex-end;
+		}
+	}
+}

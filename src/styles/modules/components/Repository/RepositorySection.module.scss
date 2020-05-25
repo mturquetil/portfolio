@@ -1,0 +1,36 @@
+@import '~/styles/mixins.scss';
+
+.RepositorySection {
+	text-align: center;
+
+	.items {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex: 1 1 0px;
+		justify-content: space-evenly;
+		transition: 1s all;
+		overflow-y: hidden;
+	}
+
+	.hidden {
+		max-height: 0;
+		transition: 1s all;
+		overflow-y: hidden;
+	}
+
+	.show {
+		max-height: 1000px;
+		transition: 1s all;
+		overflow-y: hidden;
+
+		@include mobile {
+			max-height: 2600px;
+		}
+	}
+
+	.button {
+		margin: 30px auto;
+	}
+}
+

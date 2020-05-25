@@ -1,14 +1,14 @@
 import { Component } from 'react'
 
-import styles from '~/styles/modules/Button.module.scss'
+import styles from '~/styles/modules/components/Button.module.scss'
 
 class Button extends Component {
 	render() {
-		const { className, content } = this.props
+		const { className, theme = 'default', children, onClick } = this.props
 
 		return (
-			<button className={`${styles.button} ${className} bold-text`}>
-				{content}
+			<button onClick={onClick} className={`${styles.button} ${styles[theme]} ${className} bold-text`}>
+				{children}
 			</button>
 		)
 	}

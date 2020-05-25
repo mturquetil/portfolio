@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-import styles from '~/styles/modules/Study.module.scss'
+import styles from '~/styles/modules/components/Study.module.scss'
 
 class Study extends Component {
 	render() {

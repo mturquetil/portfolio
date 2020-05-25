@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import Octicon, { getIconByName } from '@primer/octicons-react'
 
-import styles from '~/styles/modules/SummaryBar.module.scss'
+import styles from '~/styles/modules/components/SummaryBar.module.scss'
 
 class SummaryBar extends Component {
 	render() {
@@ -10,10 +10,10 @@ class SummaryBar extends Component {
 		return (
 			<div className={`${className} ${styles.summaryBar}`}>
 				<div className={`${styles.informations}`}>
-					{informations.map((information, idx) => (
-						<div key={idx} className="information grey-color">
+					{informations.map(information => (
+						<div key={`information-${information.id}`} className="information grey-color">
 							<Octicon icon={getIconByName(information.icon)} />
-							<span style={{margin: '0 5px'}}className="bold-text black-color">{information.value}</span>
+							<span style={{margin: '0 5px'}} className="bold-text black-color">{information.value}</span>
 							<span>{information.label}</span>
 						</div>
 					))}

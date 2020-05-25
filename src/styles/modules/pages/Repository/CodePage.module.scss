@@ -1,0 +1,48 @@
+@import '~/styles/variables.scss';
+@import '~/styles/functions.scss';
+
+.container {
+	align-items: center;
+	border-radius: $border-radius;
+	overflow: hidden;
+
+	.anchor:before {
+		content: '';
+		display: block;
+		position: relative;
+		height: 5em;
+		margin-top: -5em;
+		z-index: -1;
+	}
+
+	.content {
+		padding: 4px 10px;
+	}
+
+	.label {
+		display: flex;
+		align-items: center;
+		background: $grey-gradient;
+		border-right: border();
+
+		i {
+			margin-right: 5px;
+		}
+	}
+
+	.value {
+		background-color: $white-color;
+	}
+
+	.studies {
+		display: inline-flex;
+		align-items: flex-start;
+		flex-direction: column;
+
+		.delimiter {
+			margin: 22px;
+			height: 55px;
+			border-left: border($color: $black-color, $alpha: 0.5);
+		}
+	}
+}

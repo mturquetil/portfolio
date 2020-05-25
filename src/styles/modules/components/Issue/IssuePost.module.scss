@@ -1,0 +1,51 @@
+@import '~/styles/mixins.scss';
+@import '~/styles/functions.scss';
+@import '~/styles/variables.scss';
+
+.issuePost {
+	display: flex;
+	flex-direction: column;
+
+	.header {
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 30px;
+			height: 30px;
+			border: border($alpha: 0.4);
+			margin-right: 15px;
+		}
+	}
+
+	.core {
+		padding: 20px 15px;
+		border: border();
+		border-radius: $border-radius;
+		line-height: 20px;
+
+		.content {
+			p:not(:first-child) {
+				margin-top: 14px;
+			}
+		}
+
+		.additional {
+			margin-top: 20px;
+
+			.item {
+				margin-top: 6px;
+				display: flex;
+
+				.label {
+					width: 200px;
+				}
+			}
+		}
+	}
+
+	.respond {
+		width: fit-content;
+		align-self: flex-end;
+	}
+}

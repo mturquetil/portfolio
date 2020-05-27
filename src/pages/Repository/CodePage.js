@@ -8,6 +8,7 @@ import RepositoryDirectory from '~/components/Repository/RepositoryDirectory'
 import Readme from '~/components/Readme'
 import RepositorySection from '~/components/Repository/RepositorySection'
 import Study from '~/components/Study'
+import Skills from '~/components/Skills'
 import ContactForm from '~/components/ContactForm'
 
 import styles from '~/styles/modules/pages/Repository/CodePage.module.scss'
@@ -79,10 +80,10 @@ class CodePage extends Component {
 							title="Skills"
 							id="skills"
 							key="skills"
-							items={this.state.skills}
-							limit={6}
 							className={`${styles.anchor} margin-top-xxl`}
-						/>
+						>
+							<Skills limit={6} />
+						</RepositorySection>
 						<RepositorySection
 							title="Hobbies"
 							id="hobbies"
@@ -115,4 +116,4 @@ class CodePage extends Component {
 	}
 }
 
-export default connect(state => ({ ... state }))(CodePage)
+export default CodePage

@@ -1,0 +1,40 @@
+@import '~/styles/mixins.scss';
+@import '~/styles/variables.scss';
+
+.skill {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 50px;
+	min-width: 130px;
+
+	.logoContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $black-color;
+		border-radius: 50%;
+		padding: 10px;
+		width: 90px;
+		height: 90px;
+		margin: 0 auto;
+
+		.logo {
+			width: 75px;
+			height: 75px;
+		}
+	}
+
+	@include mobile-tablet {
+		width: 50%;
+	}
+
+	@include desktop {
+		width: 33%;
+	}
+
+	.title {
+		margin-top: 15px;
+	}
+}

@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Router from 'next/router'
 
 import styles from '~/styles/modules/components/Issue/IssuePost.module.scss'
 
@@ -32,7 +33,7 @@ class IssuePost extends Component {
 						</div>
 					</div>
 				</div>
-				<Button className={`${styles.respond} margin-top-m`}>
+				<Button onClick={() => Router.push('/#contact')}className={`${styles.respond} margin-top-m`}>
 					Envoyer
 				</Button>
 			</div>

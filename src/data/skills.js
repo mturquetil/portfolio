@@ -26,9 +26,6 @@ const skills = [{
 	title: 'Python',
 	imagePath: '/skills/python.svg',
 }, {
-	title: 'C',
-	imagePath: '/skills/c.svg',
-}, {
 	title: 'Sass',
 	imagePath: '/skills/sass.svg',
 }, {
@@ -47,8 +44,14 @@ const skills = [{
 	title: 'Apollo',
 	imagePath: '/skills/apollo.svg',
 }, {
+	title: 'C',
+	imagePath: '/skills/c.svg',
+}, {
 	title: 'Git',
 	imagePath: '/skills/git.svg',
+}, {
+	title: 'Vim',
+	imagePath: '/skills/vim.svg',
 }, {
 	title: 'Gestion de projet',
 	imagePath: '/skills/pm.svg',

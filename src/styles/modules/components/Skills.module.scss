@@ -1,0 +1,31 @@
+@import '~/styles/mixins.scss';
+
+.skills {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex: 1 1 0px;
+	justify-content: space-evenly;
+	transition: 1s all;
+	overflow-y: hidden;
+
+	.hidden {
+		max-height: 0;
+		transition: 1s all;
+		overflow-y: hidden;
+	}
+
+	.show {
+		max-height: 1000px;
+		transition: 1s all;
+		overflow-y: hidden;
+
+		@include mobile-tablet {
+			max-height: 3600px;
+		}
+	}
+
+	.button {
+		margin: 30px auto;
+	}
+}

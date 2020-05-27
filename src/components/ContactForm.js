@@ -1,4 +1,5 @@
-import { Component } from 'react'
+import { useState } from 'react'
+import { useToasts, ToastProvider } from 'react-toast-notifications'
 
 import styles from '~/styles/modules/components/ContactForm.module.scss'
 
@@ -6,52 +7,69 @@ import InputText from '~/components/Input/InputText'
 import InputTextarea from '~/components/Input/InputTextarea'
 import Button from '~/components/Button'
 
-class ContactForm extends Component {
-	constructor(props) {
-		super(props)
+const ContactForm = ({ id, className }) => {
+	const { addToast } = useToasts()
 
-		this.state = {
-			contact: {
-				name: '',
-				email: '',
-				message: ''
-			}
-		}
+	const INITIAL_STATE = {
+		name: '',
+		email: '',
+		message: ''
 	}
 
-	render() {
-		const { id, className } = this.props
+	const [contact, setState] = useState({ ...INITIAL_STATE })
 
-		return (
-			<div id={id} className={`${styles.ContactForm} ${className}`}>
-				<h2 className={`bold-text`}>Me contacter</h2>
-				<div className={styles.inputs}>
-					<InputText
-						className="margin-top-l"
-						handleChange={(name) => this.setState(state => ({ contact: { ...state.contact, name } }))}
-						value={this.state.contact.name}
-						placeholder="Nom et prenom"
-					/>
-					<InputText
-						className="margin-top-m"
-						handleChange={(email) => this.setState(state => ({ contact: { ...state.contact, email } }))}
-						value={this.state.contact.email}
-						placeholder="Adresse e-mail"
-					/>
-					<InputTextarea
-						className="margin-top-m"
-						handleChange={(message) => this.setState(state => ({ contact: { ...state.contact, message } }))}
-						value={this.state.contact.message}
-						placeholder="Votre message"
-					/>
-					<Button className={`${styles.button} margin-top-m`}>
-						Envoyer
-					</Button>
-				</div>
+	const sendMail = () => {
+		fetch('/api/contact', {
+			method: 'POST',
+			cache: 'no-cache',
+			body: JSON.stringify(contact)
+		})
+			.then(res => {
+				if (!res.ok) {
+					throw new Error('Une erreur est survenue')
+				}
+
+				return res.text()
+			})
+			.then(data => {
+				addToast(data, { appearance: 'success' })
+				setState({ ...INITIAL_STATE })
+			})
+			.catch(e => addToast(e.message, { appearance: 'error' }))
+	}
+
+	return (
+		<div id={id} className={`${styles.ContactForm} ${className}`}>
+			<h2 className={`bold-text`}>Me contacter</h2>
+			<div className={styles.inputs}>
+				<InputText
+					className="margin-top-l"
+					handleChange={(name) => setState(contact => ({ ...contact, name }))}
+					value={contact.name}
+					placeholder="Nom et prénom"
+				/>
+				<InputText
+					className="margin-top-m"
+					handleChange={(email) => setState(contact => ({ ...contact, email }))}
+					value={contact.email}
+					placeholder="Adresse e-mail"
+				/>
+				<InputTextarea
+					className="margin-top-m"
+					handleChange={(message) => setState(contact => ({ ...contact, message }))}
+					value={contact.message}
+					placeholder="Votre message"
+				/>
+				<Button onClick={sendMail} className={`${styles.button} margin-top-m`}>
+					Envoyer
+				</Button>
 			</div>
-		)
-	}
+		</div>
+	)
 }
 
-export default ContactForm
-
+export default (props) => (
+	<ToastProvider autoDismiss placement="bottom-right">
+		<ContactForm {...props} />
+	</ToastProvider>
+)

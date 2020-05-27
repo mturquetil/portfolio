@@ -23,6 +23,7 @@
 }
 
 @mixin buttonThemer($theme: 'default') {
+	transition: 0.2s;
 	@if $theme == 'default' {
 		padding: 9px 13px;
 		border: border();

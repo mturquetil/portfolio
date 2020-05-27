@@ -37,11 +37,11 @@
 	}
 
 	.ArticleReader {
-		transform: translateY(100%);
-		transition: 0.7s all;
+		transform: translateY(0%);
+		transition: 0.7s transform;
 
 		&.active {
-			transform: translateY(0%);
+			transform: translateY(-100%);
 		}
 	}
 

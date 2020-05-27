@@ -3,9 +3,9 @@
 .ArticleReader {
 	width: 100vw;
 	height: 100vh;
+	top: 100%;
+	left: 0%;
 	position: fixed;
-	top: 0;
-	left: 0;
 	z-index: 10;
 	background: $white-color;
 	display: flex;

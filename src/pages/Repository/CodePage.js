@@ -1,6 +1,5 @@
 import { Component } from 'react'
 import Head from 'next/head'
-import { connect } from 'react-redux'
 
 import RepositoryPresentation from '~/components/Repository/RepositoryPresentation'
 import RepositoryStatus from '~/components/Repository/RepositoryStatus'

@@ -1,4 +1,3 @@
-import { Provider } from 'react-redux'
 import Head from 'next/head'
 
 import RepositoryLayout from '~/layouts/RepositoryLayout.js'

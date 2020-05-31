@@ -1,23 +1,5 @@
 const projects = [{
-	title: 'Rust Commander',
-	imagePath: '/projects/rustcommander.png',
-	text: (
-		<div>
-			<p>RustCommander est un outil d’administration vous permettant de contrôler et d’agir sur votre serveur de jeu Rust depuis un serveur Discord/Slack.</p>
-			<p className="margin-top-l">Il comprend les fonctionnalites suivantes : </p>
-			<ul className="margin-top-m">
-				<li>Consultation du chat sur le serveur de jeu Rust, interaction avec celui-ci depuis Slack/Discord</li>
-				<li>Recevoir des notifications si des messages dans le chat correspondent a une liste de mot filtre (eg. filtrage d'insulte)</li>
-				<li>Consultation des logs serveurs depuis Slack/Discord</li>
-				<li>Interaction avec la console du serveur Rust</li>
-				<li>Configuration simple depuis un fichier JSON</li>
-				<li>Reconnexion automatique si perte de connexion</li>
-			</ul>
-			<p className="margin-top-l">Cet outil a été développé avec Node.js et utilise les websockets. Il a été co-écrit avec Nicolas VARROT.</p>
-		</div>
-	)
-}, {
-	title: 'Mon environnement Open-Source',
+	title: 'L\'environnement Open-Source',
 	imagePath: '/projects/opensource.svg',
 	text: (
 		<div>
@@ -67,6 +49,24 @@ const projects = [{
 
 		<p className="margin-top-l">Travailler sur cette application m’a permit de gagner en compétences sur les nouvelles technologies relatives au développement d’applications mobiles. Cela m’a également permit une introduction à la programmation réactive par le biais de l’architecture BloC (Business Logic Component) recommandé durant la DartConf 2018.</p>
 	</div>)
-}]
+}, {
+	title: 'Rust Commander',
+	imagePath: '/projects/commander.svg',
+	text: (
+		<div>
+			<p>RustCommander est un outil d’administration vous permettant de contrôler et d’agir sur votre serveur de jeu Rust depuis un serveur Discord/Slack.</p>
+			<p className="margin-top-l">Il comprend les fonctionnalites suivantes : </p>
+			<ul className="margin-top-m">
+				<li>Consultation du chat sur le serveur de jeu Rust, interaction avec celui-ci depuis Slack/Discord</li>
+				<li>Recevoir des notifications si des messages dans le chat correspondent a une liste de mot filtre (eg. filtrage d'insulte)</li>
+				<li>Consultation des logs serveurs depuis Slack/Discord</li>
+				<li>Interaction avec la console du serveur Rust</li>
+				<li>Configuration simple depuis un fichier JSON</li>
+				<li>Reconnexion automatique si perte de connexion</li>
+			</ul>
+			<p className="margin-top-l">Cet outil a été développé avec Node.js et utilise les websockets. Il a été co-écrit avec Nicolas VARROT.</p>
+		</div>
+	)
+},]
 
 export default projects

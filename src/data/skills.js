@@ -1,15 +1,12 @@
 const skills = [{
-	title: 'MongoDB',
-	imagePath: '/skills/mongodb.svg',
-}, {
 	title: 'Vue.js',
 	imagePath: '/skills/vue.svg',
 }, {
-	title: 'React.js',
-	imagePath: '/skills/react.svg',
-}, {
 	title: 'Nuxt.js',
 	imagePath: '/skills/nuxt.svg',
+}, {
+	title: 'React.js',
+	imagePath: '/skills/react.svg',
 }, {
 	title: 'Next.js',
 	imagePath: '/skills/nextjs.svg',
@@ -17,38 +14,41 @@ const skills = [{
 	title: 'Flutter',
 	imagePath: '/skills/flutter.svg',
 }, {
-	title: 'Dart',
-	imagePath: '/skills/dart.svg',
-}, {
 	title: 'Node.js',
 	imagePath: '/skills/nodejs.svg',
 }, {
+	title: 'MongoDB',
+	imagePath: '/skills/mongodb.svg',
+}, {
+	title: 'Dart',
+	imagePath: '/skills/dart.svg',
+}, {
+	title: 'Linux',
+	imagePath: '/skills/linux.svg',
+}, {
+	title: 'C',
+	imagePath: '/skills/c.svg',
+}, {
 	title: 'Python',
 	imagePath: '/skills/python.svg',
+}, {
+	title: 'GraphQL',
+	imagePath: '/skills/graphql.svg',
+}, {
+	title: 'Apollo',
+	imagePath: '/skills/apollo.svg',
+}, {
+	title: 'Git',
+	imagePath: '/skills/git.svg',
+}, {
+	title: 'Nginx',
+	imagePath: '/skills/nginx.svg',
 }, {
 	title: 'Sass',
 	imagePath: '/skills/sass.svg',
 }, {
 	title: 'Webpack',
 	imagePath: '/skills/webpack.svg',
-}, {
-	title: 'GraphQL',
-	imagePath: '/skills/graphql.svg',
-}, {
-	title: 'Nginx',
-	imagePath: '/skills/nginx.svg',
-}, {
-	title: 'Linux',
-	imagePath: '/skills/linux.svg',
-}, {
-	title: 'Apollo',
-	imagePath: '/skills/apollo.svg',
-}, {
-	title: 'C',
-	imagePath: '/skills/c.svg',
-}, {
-	title: 'Git',
-	imagePath: '/skills/git.svg',
 }, {
 	title: 'Vim',
 	imagePath: '/skills/vim.svg',

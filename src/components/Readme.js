@@ -37,7 +37,7 @@ class Readme extends Component {
 							<img className={styles.shield} key={`shield-${idx}`} src={`https://img.shields.io/badge/${shield.label}-${shield.value}-${shield.color}`} />
 						))}
 					</div>
-					<a className={`${styles.github} margin-top-l`} href={this.state.githubURL} target="_blank">
+					<a className={`${styles.github} nostyle margin-top-l`} href={this.state.githubURL} target="_blank">
 						<span className="bold-text black-color">Mon compte</span>
 						<Octicon icon={getIconByName('mark-github')} />
 					</a>

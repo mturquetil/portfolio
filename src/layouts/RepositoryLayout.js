@@ -16,7 +16,7 @@ class RepositoryLayout extends Component {
 				id: 0,
 				icon: 'email',
 				label: 'Email',
-				value: 'maturquetil@gmail.com'
+				value: 'maxime@mturquetil.fr'
 			}, {
 				id: 1,
 				icon: 'phone',
@@ -57,7 +57,7 @@ class RepositoryLayout extends Component {
 			<div className={styles.repository}>
 				<div className={styles.header}>
 					<div className={styles.headerContainer}>
-						<div className={styles.topLine}>
+						<div className={`${styles.topLine} margin-top-m`}>
 							<RepositoryTitle
 								owner="your-company"
 								repository="maxime-turquetil"

@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import Head from 'next/head'
 
 import RepositoryPresentation from '~/components/Repository/RepositoryPresentation'
 import RepositoryStatus from '~/components/Repository/RepositoryStatus'
@@ -46,9 +45,6 @@ class CodePage extends Component {
 	render() {
 		return (
 			<div className="margin-top-l">
-				<Head>
-					<title>portfolio-front locale</title>
-				</Head>
 				<main>
 					<div className={styles.container}>
 						<RepositoryPresentation />

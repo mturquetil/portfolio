@@ -23,8 +23,8 @@ class DirectoryItem extends Component {
 			<a href={item.anchor} className={`${styles.directoryItem} ${className} grey-color`}>
 				<Octicon className={styles.icon} icon={getIconByName(item.icon)} />
 				<p className={`${styles.name} blue-color`}>{item.name}</p>
-				<p className={styles.commit}>{item.commit}</p>
-				<p className={`${styles.time} mobile`}>{item.time}</p>
+				<p className={`${styles.commit} mobile`}>{item.commit}</p>
+				<p className={`${styles.time}`}>{item.time}</p>
 			</a>
 		)
 	}

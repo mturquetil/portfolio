@@ -12,12 +12,12 @@ class LastCommitBar extends Component {
 				<div className={`${styles.leftSide} s-text`}>
 					<img src="/profil.jpg" />
 					<p className={`bold-text black-color ${styles.author}`}>mturquetil</p>
-					<p>feat: portfolio update (<span className="blue-color">#1</span>)</p>
+					<p>feat: update dotfiles (<span className="blue-color">#31</span>)</p>
 				</div>
 				<div className={styles.rightSide}>
 					<Octicon className="tablet-desktop green-color" icon={getIconByName('check')} />
 					<p className="tablet-desktop">Latest commit <span style={{fontFamily: 'Consolas'}}>0097A7</span></p>
-					<p>1 hour ago</p>
+					<p className="mobile">27 minutes ago</p>
 				</div>
 			</div>
 		)

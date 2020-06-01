@@ -20,22 +20,22 @@ class RepositoryPresentation extends Component {
 
 			informations: [{
 				id: 0,
-				label: 'professional exp.',
-				value: '2.5 years',
+				label: 'd\'expérience pro.',
+				value: '2.5 années',
 				icon: 'git-commit'
 			}, {
 				id: 1,
-				label: 'studied',
-				value: '5 years',
+				label: 'd\'études',
+				value: '5 ans',
 				icon: 'mortar-board'
 			}, {
 				id: 2,
-				label: 'hobbies',
+				label: 'passions',
 				value: '3',
 				icon: 'heart'
 			}, {
 				id: 3,
-				label: 'contributors',
+				label: 'contributeurs',
 				value: '6',
 				icon: 'organization'
 			}],
@@ -45,7 +45,7 @@ class RepositoryPresentation extends Component {
 	render() {
 		return (
 			<div>
-				<p style={{lineHeight: 1.4}} className="l-text">Hi ! My name is Maxime, I am 23 years old fullstack developer and open source adept, here's my portfolio.</p>
+				<p style={{lineHeight: 1.4}} className="l-text">Bonjour ! Je m'appelle Maxime, je suis un développeur fullstack de 23 ans et un partisan de l'open source, voici mon portfolio.</p>
 				<div className="margin-top-s">
 					{this.state.tags.map((tag, idx) => (
 						<Tag

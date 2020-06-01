@@ -45,8 +45,8 @@ class Readme extends Component {
 						<p><span className="bold-text">Maxime Turquetil</span> est une librairie fullstack de <span className="bold-text">23 ans</span> écrite en code génétique.</p>
 
 						<p className="margin-top-m">
-							Passionnée par les évolutions technologiques et le monde <span className="bold-text">open source</span>, elle essaye de se tenir le plus à jour pour pouvoir répondre aux défis imposés par notre siècle.
-						Ses utilisations multiples vont de la confection de sites web, d’applications mobiles au développement d’outils métier spécifique.
+							Passionnée par les évolutions technologiques et le monde <span className="bold-text">open source</span>, elle essaye de se tenir le plus à jour pour pouvoir répondre aux défis de notre époque.
+						Ses utilisations multiples vont de la confection de site web, d’application mobile au développement d’outil métier spécifique.
 							Cette librairie est également en cours de développement de la fonctionnalité <span className="bold-text">DevOps</span>.
 						</p>
 					</div>

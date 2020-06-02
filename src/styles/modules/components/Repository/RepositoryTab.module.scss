@@ -28,6 +28,13 @@
 	color: $grey-color;
 }
 
+.count {
+	font-weight: bold;
+	font-size: 13px;
+	color: #ff9999;
+	align-self: center;
+}
+
 .inactive {
 	color: rgba($grey-color, 0.6);
 }

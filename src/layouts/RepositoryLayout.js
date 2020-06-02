@@ -34,12 +34,18 @@ class RepositoryLayout extends Component {
 				id: 1,
 				icon: 'issue-opened',
 				name: 'Issues',
+				count: 1,
 				path: '/issues',
 				active: false
 			}]
 		}
 
 		this.changeTab = this.changeTab.bind(this)
+	}
+
+	componentDidMount() {
+		const id = this.state.tabs.find(tab => tab.path === Router.router.route).id
+		this.changeTab(id)
 	}
 
 	changeTab(id) {

@@ -12,6 +12,7 @@ import ContactForm from '~/components/ContactForm'
 import styles from '~/styles/modules/pages/Repository/CodePage.module.scss'
 
 // data
+import { logPageView } from '~/ga.js'
 import experiences from '~/data/experiences'
 import skills from '~/data/skills'
 import directoryItems from '~/data/directoryItems'
@@ -41,6 +42,9 @@ class CodePage extends Component {
 		}
 	}
 
+	componentDidMount() {
+		logPageView()
+	}
 
 	render() {
 		return (

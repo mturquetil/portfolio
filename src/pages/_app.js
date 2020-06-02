@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 
+import { initGA } from '~/ga.js'
 import RepositoryLayout from '~/layouts/RepositoryLayout.js'
 import '~/styles/global.scss'
 
@@ -10,6 +12,13 @@ const app = ({ Component, pageProps }) => {
 		description: 'Maxime Turquetil est une librairie fullstack de 23 ans écrite en code génétique. Passionnée par les évolutions technologiques et le monde open source, elle essaye de se tenir le plus à jour pour pouvoir répondre aux défis de notre époque. Ses utilisations multiples vont de la confection de site web, d’application mobile au développement d’outil métier spécifique. Cette librairie est également en cours de développement de la fonctionnalité DevOps.',
 		image: 'https://mturquetil.fr/social.png'
 	}
+
+	useEffect(() => {
+		if (!window.GA_INITIALIZED) {
+			initGA()
+			window.GA_INITIALIZED = true
+		}
+	})
 
 	return (
 		<>

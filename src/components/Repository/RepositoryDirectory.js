@@ -14,6 +14,7 @@ class RepositoryDirectory extends Component {
 					<DirectoryItem
 						key={`dir-${idx}`}
 						item={dir}
+						className={styles.dir}
 					/>
 				))}
 			</div>

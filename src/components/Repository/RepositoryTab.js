@@ -11,6 +11,7 @@ class RepositoryTab extends Component {
 			<div onClick={() => handleClick(tab.id)} className={`${tab.active === true ? styles.active : styles.inactive} m-text ${className} ${styles.container}`}>
 				<Octicon icon={getIconByName(tab.icon)} size='small' />
 				<span>{tab.name}</span>
+				{tab.count ? <span className={styles.count}>{tab.count}</span> : null}
 			</div>
 		)
 	}

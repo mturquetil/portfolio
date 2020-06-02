@@ -34,7 +34,7 @@ class IssuePost extends Component {
 					</div>
 				</div>
 				<Button onClick={() => Router.push('/#contact')}className={`${styles.respond} margin-top-m`}>
-					Envoyer
+					Répondre
 				</Button>
 			</div>
 		)

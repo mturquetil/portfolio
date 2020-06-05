@@ -24,9 +24,14 @@ const app = ({ Component, pageProps }) => {
 		<>
 			<Head>
 				<title>{seo.title}</title>
-				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-				<link href="/fonts/charter/charter.css" rel="stylesheet" />
+
+				<link rel="icon" href="favicon.svg" />
+				<link rel="stylesheet" href="styles/fonts/charter/charter.css" type="text/css" />
+				<link rel="stylesheet" href="styles/fonts/material-icons/material-icons.css" type="text/css" />
+
+				<meta name="description" content={seo.description} />
+				<meta property="fb:app_id" content="602673373940744" />
+				<meta property="og:title" content={seo.title} />
 				<meta property="og:title" content={seo.title} />
 				<meta property="og:type" content="website" />
 				<meta property="og:image" content={seo.image} />

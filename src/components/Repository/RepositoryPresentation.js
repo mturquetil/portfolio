@@ -45,7 +45,7 @@ class RepositoryPresentation extends Component {
 	render() {
 		return (
 			<div>
-				<p style={{lineHeight: 1.4}} className="l-text">Bonjour ! Je m'appelle Maxime, je suis un développeur fullstack de 23 ans et un partisan de l'open source, voici mon portfolio.</p>
+				<p className={`${styles.desc} l-text`}>Bonjour ! Je m'appelle Maxime, je suis un développeur fullstack de 23 ans et un partisan de l'open source, voici mon portfolio.</p>
 				<div className="margin-top-s">
 					{this.state.tags.map((tag, idx) => (
 						<Tag
@@ -55,10 +55,10 @@ class RepositoryPresentation extends Component {
 						/>
 					))}
 				</div>
-					<SummaryBar
-						className="desktop margin-top-l"
-						informations={this.state.informations}
-					/>
+				<SummaryBar
+					className="desktop margin-top-l"
+					informations={this.state.informations}
+				/>
 			</div>
 		)
 	}

@@ -10,7 +10,7 @@ class Skill extends Component {
 			<div className={`${styles.skill} ${className}`}>
 				<div>
 					<div className={styles.logoContainer}>
-						<img className={styles.logo} src={skill.imagePath} />
+						<img alt={skill.title} className={styles.logo} src={skill.imagePath} />
 					</div>
 					<h3 className={`${styles.title} bold-text`}>{skill.title}</h3>
 				</div>

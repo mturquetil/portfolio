@@ -1,18 +1,20 @@
 const projects = [{
 	title: 'L\'environnement Open-Source',
 	imagePath: '/projects/opensource.svg',
+	alt: 'Logo Open Source',
 	text: (
 		<div>
 			<p className="margin-top-s">L'esprit de ce projet est né d'un besoin d’optimisation global de, mon workflow, mes performances machines, ainsi que de mon implication dans les systèmes unix et l'open source.</p>
 			<p className="margin-top-l">En effet, au fil du temps, je me suis rendu compte que mon environnement technique (système d’exploitation et outils utilisés) tant sur le point professionnel que personnel n'était pas en accord avec mes valeurs.</p>
 			<p className="margin-top-l">Celui-ci était constitué principalement de composantes propriétaires sur lesquelles je n'avais aucun contrôle, qui m'imposaient une couche d'abstraction supplémentaire et qui se révélaient moins performantes.</p>
 			<p className="margin-top-l">De part ma nature curieuse et ce besoin de transparence et d'indépendance technique, j'ai créé mon environnement de travail uniquement composé d’outil open source. Cela m'a permis d'améliorer mes connaissances dans le fonctionnement des systèmes Unix et d’avoir une maîtrise essentielle de mes outils.</p>
-			<p className="margin-top-l">Pour continuer dans cette démarche, je suis en cours de migration vers l'utilisation d'un maximum d'outils basées sur la philosophie <a className="nostyle" target="_blank" href="https://suckless.org/">suckless</a>.</p>
+			<p className="margin-top-l">Pour continuer dans cette démarche, je suis en cours de migration vers l'utilisation d'un maximum d'outils basées sur la philosophie <a className="nostyle" target="_blank" rel="noreferrer" href="https://suckless.org/">suckless</a>.</p>
 		</div>
 	)
 }, {
 	title: 'Less mouse, more typing',
 	imagePath: '/projects/mouse.svg',
+	alt: 'Logo souris',
 	media: {
 		type: 'video',
 		src: 'https://www.youtube.com/embed/E-ZbrtoSuzw',
@@ -36,6 +38,7 @@ const projects = [{
 }, {
 	title: 'Le tourisme dans la poche',
 	imagePath: '/projects/tourism.svg',
+	alt: 'Logo tourisme',
 	text: (<div>
 		<p>Dans le cadre de mon travail au sein de la start-up Activitour, j’ai réalisé une application mobile multi-plateforme avec Flutter (SDK écrit en Dart) destinée aux professionnels du tourisme clients d’Activitour.</p>
 
@@ -52,6 +55,7 @@ const projects = [{
 }, {
 	title: 'Rust Commander',
 	imagePath: '/projects/commander.svg',
+	alt: 'Logo chapeau',
 	text: (
 		<div>
 			<p>RustCommander est un outil d’administration vous permettant de contrôler et d’agir sur votre serveur de jeu Rust depuis un serveur Discord/Slack.</p>

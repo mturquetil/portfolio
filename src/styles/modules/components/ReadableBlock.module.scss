@@ -8,6 +8,11 @@
 	margin-top: 50px;
 	min-width: 130px;
 
+	.icon {
+		font-size: 18px;
+		margin: 2px 6px;
+	}
+
 	@include mobile {
 		width: 100%;
 	}

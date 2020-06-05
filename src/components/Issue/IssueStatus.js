@@ -9,7 +9,7 @@ class IssueStatus extends Component {
 		return (
 			<div className={`${className} ${styles.issueStatus}`}>
 				<div className={`white-color l-text bold-text ${styles.issueState}`}>
-					<i className="material-icons" style={{fontSize: '26px'}}>error_outline</i>
+					<i className={`${styles.icon} material-icons`}>error_outline</i>
 					<p className={styles.state}>Open</p>
 				</div>
 				<div className={`l-text grey-color ${styles.content}`}>

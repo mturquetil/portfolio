@@ -10,14 +10,14 @@ class LastCommitBar extends Component {
 		return (
 			<div className={`${className} ${styles.lastCommitBar} grey-color`}>
 				<div className={`${styles.leftSide} s-text`}>
-					<img src="/profil.jpg" />
+					<img alt="Photo de profil" src="/profil.webp" />
 					<p className={`bold-text black-color ${styles.author}`}>mturquetil</p>
-					<p>feat: update dotfiles (<span className="blue-color">#31</span>)</p>
+					<p className="dark-grey-color">feat: update dotfiles (<span className="blue-color">#31</span>)</p>
 				</div>
 				<div className={styles.rightSide}>
 					<Octicon className="tablet-desktop green-color" icon={getIconByName('check')} />
-					<p className="tablet-desktop">Latest commit <span style={{fontFamily: 'Consolas'}}>0097A7</span></p>
-					<p className="mobile">27 minutes ago</p>
+					<p className="dark-grey-color tablet-desktop">Latest commit <span className={styles.commitNumber}>0097A7</span></p>
+					<p className="dark-grey-color mobile">27 minutes ago</p>
 				</div>
 			</div>
 		)

@@ -45,18 +45,21 @@ const ContactForm = ({ id, className }) => {
 				<InputText
 					className="margin-top-l"
 					handleChange={(name) => setState(contact => ({ ...contact, name }))}
+					name="names"
 					value={contact.name}
 					placeholder="Nom et prénom"
 				/>
 				<InputText
 					className="margin-top-m"
 					handleChange={(email) => setState(contact => ({ ...contact, email }))}
+					name="email"
 					value={contact.email}
 					placeholder="Adresse e-mail"
 				/>
 				<InputTextarea
 					className="margin-top-m"
 					handleChange={(message) => setState(contact => ({ ...contact, message }))}
+					name="message"
 					value={contact.message}
 					placeholder="Votre message"
 				/>

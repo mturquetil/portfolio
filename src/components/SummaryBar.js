@@ -13,7 +13,7 @@ class SummaryBar extends Component {
 					{informations.map(information => (
 						<div key={`information-${information.id}`} className="information grey-color">
 							<Octicon icon={getIconByName(information.icon)} />
-							<span style={{margin: '0 5px'}} className="bold-text black-color">{information.value}</span>
+							<span className={`${styles.value} bold-text black-color`}>{information.value}</span>
 							<span>{information.label}</span>
 						</div>
 					))}

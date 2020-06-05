@@ -30,14 +30,14 @@ class Readme extends Component {
 					README.md
 				</div>
 				<div className={styles.content}>
-					<img className={styles.profile} src="/profil.jpg" />
+					<img alt="photo de profil" className={styles.profile} src="/profil.webp" />
 					<p className={`bold-text ${styles.title}`}>Maxime Turquetil</p>
 					<div className={`margin-top-l ${styles.shields}`}>
 						{this.state.shields.map((shield, idx) => (
-							<img className={styles.shield} key={`shield-${idx}`} src={`https://img.shields.io/badge/${shield.label}-${shield.value}-${shield.color}`} />
+							<img alt={`${shield.label}: ${shield.value}`} className={styles.shield} key={`shield-${idx}`} src={`https://img.shields.io/badge/${shield.label}-${shield.value}-${shield.color}`} />
 						))}
 					</div>
-					<a className={`${styles.github} nostyle margin-top-l`} href={this.state.githubURL} target="_blank">
+					<a className={`${styles.github} nostyle margin-top-l`} rel="noreferrer" href={this.state.githubURL} target="_blank">
 						<span className="bold-text black-color">Mon compte</span>
 						<Octicon icon={getIconByName('mark-github')} />
 					</a>

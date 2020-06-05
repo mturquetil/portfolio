@@ -1,15 +1,16 @@
 const experiences = [{
 	title: 'Activitour',
-	imagePath: '/experiences/activitour.png',
+	imagePath: '/experiences/activitour.webp',
+	alt: 'Logo Activitour',
 	period: 'Mars 2017 - Aout 2020',
 	text: (
 		<div>
 			<p className="margin-top-l">
-				Cette aventure a commencé en Mars 2017 au côté d’Emmanuel Russeil (tuteur et cofondateur) et Baptiste Rebut (cofondateur) qui à la suite d’un test technique m’ont intégré dans leur équipe. Au cours de ces deux années, j’ai acquis le goût de l’<strong>entrepreneuriat</strong> et de la <strong>réalisation de projet</strong> qui me faisait défaut auparavant.
+				Cette aventure a commencé en Mars 2017 au côté d’Emmanuel Russeil (tuteur et cofondateur) et Baptiste Rebut (cofondateur) qui à la suite d’un test technique m’ont intégré à leur équipe. Au cours de ces deux années, j’ai acquis le goût de l’<strong>entrepreneuriat</strong> et de la <strong>réalisation de projet</strong> qui me faisait défaut auparavant.
 			</p>
 			<p className="margin-top-l">Cette expérience m’a permis de grandir professionnellement tant sur le plan technique que sur celui du travail en équipe.</p>
 			<p className="margin-top-l">La start-up venant de se créer, les aspects <strong>chefferie de projet</strong>, <strong>workflow technique</strong> et <strong>communication</strong> entre les équipes n'étaient pas encore en place. Cela m’a permis, avec l’aide de mon tuteur, de travailler sur ces points qui peuvent échapper aux personnes intégrant un établissement déjà structuré.</p>
-			<p className="margin-top-l">Concernant les réalisations techniques que j’ai effectué sur ces deux années, en voici une liste non-exhaustive :</p>
+			<p className="margin-top-l">Concernant les réalisations techniques que j’ai effectuées sur ces deux années, en voici une liste non-exhaustive :</p>
 			<ul className="margin-top-m">
 				<li>Réalisation de la première version du front-office [<strong>Vuejs</strong>]</li>
 				<li>Ajout et amélioration de fonctionnalités diverses sur le back-office [<strong>Vuejs</strong>]</li>
@@ -23,7 +24,8 @@ const experiences = [{
 	)
 }, {
 	title: 'Conscience Robotics',
-	imagePath: '/experiences/conscience.jpeg',
+	imagePath: '/experiences/conscience.webp',
+	alt: 'Logo Conscience',
 	period: '2 semaines',
 	media: {
 		type: 'video',
@@ -41,7 +43,8 @@ const experiences = [{
 	)
 }, {
 	title: 'Normandie Welcome',
-	imagePath: '/experiences/nw.png',
+	imagePath: '/experiences/nw.webp',
+	alt: 'Logo Normandie Welcome',
 	period: '6 mois - Service civique',
 	text: (
 		<div>

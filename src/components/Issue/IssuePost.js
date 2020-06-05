@@ -11,7 +11,7 @@ class IssuePost extends Component {
 		return (
 			<div className={`${className} ${styles.issuePost}`}>
 				<div className={styles.header}>
-					<img className="border-round" src="profil.jpg" />
+					<img alt="Photo profil" className="border-round" src="profil.webp" />
 					<p className="bold-text grey-color"><span className="black-color">mturquetil</span> commented on Mar 23</p>
 				</div>
 				<div className={`margin-top-m l-text ${styles.core}`}>
@@ -22,7 +22,7 @@ class IssuePost extends Component {
 						<p>En espérant que mon profil vous intéresse, je suis dans l’attente de vos pulls requests !</p>
 					</div>
 					<div className={`${styles.additional}`}>
-						<p style={{fontStyle: 'italic'}} className="grey-color">Informations complémentaires</p>
+						<p className={`${styles.infos} grey-color`}>Informations complémentaires</p>
 						<div className={`${styles.item}`}>
 							<p className={`bold-text ${styles.label}`}>Disponibilité</p>
 							<p className={styles.value}>28 août 2020</p>

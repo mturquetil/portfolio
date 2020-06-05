@@ -1,5 +1,9 @@
 @import '~/styles/mixins.scss';
 
+.desc {
+	line-height: 1.4;
+}
+
 .tags {
 	&:not(:last-child) {
 		margin-right: 8px;

@@ -32,11 +32,11 @@ class ReadableBlock extends Component {
 		return (
 			<div className={`${styles.readableBlock} ${className}`}>
 				<div>
-					<img className={styles.logo} src={data.imagePath} />
+					<img alt={data.alt} className={styles.logo} src={data.imagePath} />
 					<h3 className={`${styles.title} bold-text`}>{data.title}</h3>
 					{data.period ? <h4 className={`${styles.period} grey-color l-text bold-text`}>{data.period}</h4> : null}
 				</div>
-				{data.text ? <ArticleReader onClose={this.handleClick} className={`${styles.ArticleReader} ${this.state.isOpen ? `${styles.active}` : null}`} article={data}>
+				{data.text ? <ArticleReader isOpen={this.state.isOpen} onClose={this.handleClick} className={`${styles.ArticleReader} ${this.state.isOpen ? `${styles.active}` : null}`} article={data}>
 					<div className={styles.content}>
 						{data.text}
 					</div>
@@ -49,7 +49,7 @@ class ReadableBlock extends Component {
 						className={`margin-top-m`}
 					>
 						Lire
-						<i className="material-icons" style={{fontSize: '18px', margin: '2px 6px'}}>visibility</i>
+						<i className={`${styles.icon} material-icons`}>visibility</i>
 					</Button> : null}
 			</div>
 		)

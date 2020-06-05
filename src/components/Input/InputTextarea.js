@@ -8,10 +8,13 @@ class InputTextarea extends React.Component {
 	}
 
 	render() {
-		const { className, handleChange, value, placeholder = 'Placeholder' } = this.props
+		const { className, name, handleChange, value, placeholder = 'Placeholder' } = this.props
 
 		return (
-			<textarea value={value} placeholder={placeholder} onChange={(e) => handleChange(e.target.value)} className={`l-text border-radius inner-shadow ${className} ${styles.input}`} />
+			<>
+				<label className={styles.hidden} for={name}>c</label>
+				<textarea id={name} value={value} placeholder={placeholder} onChange={(e) => handleChange(e.target.value)} className={`l-text border-radius inner-shadow ${className} ${styles.input}`} />
+			</>
 		)
 	}
 }

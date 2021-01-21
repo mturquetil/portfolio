@@ -8,7 +8,7 @@ class InputText extends React.Component {
 
 		return (
 			<>
-				<label className={styles.hidden} for={name}>c</label>
+				<label className={styles.hidden} htmlFor={name}>c</label>
 				<input id={name} value={value} placeholder={placeholder} onChange={(e) => handleChange(e.target.value)} className={`l-text border-radius inner-shadow ${className} ${styles.input}`} />
 			</>
 		)

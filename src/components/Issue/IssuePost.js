@@ -12,7 +12,7 @@ class IssuePost extends Component {
 			<div className={`${className} ${styles.issuePost}`}>
 				<div className={styles.header}>
 					<img alt="Photo profil" className="border-round" src="profil.webp" />
-					<p className="bold-text grey-color"><span className="black-color">mturquetil</span> commented on Mar 23</p>
+					<p className="bold-text grey-color"><span className="black-color">mturquetil</span> commented on Jan 10</p>
 				</div>
 				<div className={`margin-top-m l-text ${styles.core}`}>
 					<div className={`${styles.content}`}>
@@ -25,11 +25,11 @@ class IssuePost extends Component {
 						<p className={`${styles.infos} grey-color`}>Informations complémentaires</p>
 						<div className={`${styles.item}`}>
 							<p className={`bold-text ${styles.label}`}>Disponibilité</p>
-							<p className={styles.value}>28 août 2020</p>
+							<p className={styles.value}>2021</p>
 						</div>
 						<div className={`${styles.item}`}>
 							<p className={`bold-text ${styles.label}`}>Zone</p>
-							<p className={styles.value}>Caen</p>
+							<p className={styles.value}>Caen, Rennes</p>
 						</div>
 					</div>
 				</div>

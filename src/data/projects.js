@@ -50,7 +50,7 @@ const projects = [{
 			<li>Consultation du statut de paiement d’une réservation à venir</li>
 		</ul>
 
-		<p className="margin-top-l">Travailler sur cette application m’a permit de gagner en compétences sur les nouvelles technologies relatives au développement d’applications mobiles. Cela m’a également permit une introduction à la programmation réactive par le biais de l’architecture BloC (Business Logic Component) recommandée durant la DartConf 2018.</p>
+		<p className="margin-top-l">Travailler sur cette application m’a permis de gagner en compétences sur les nouvelles technologies relatives au développement d’applications mobiles. Cela m’a également permit une introduction à la programmation réactive par le biais de l’architecture BloC (Business Logic Component) recommandée durant la DartConf 2018.</p>
 	</div>)
 }, {
 	title: 'Rust Commander',

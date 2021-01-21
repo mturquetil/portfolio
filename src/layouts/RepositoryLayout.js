@@ -14,11 +14,16 @@ class RepositoryLayout extends Component {
 		this.state = {
 			badges: [{
 				id: 0,
+				icon: 'article',
+				label: '',
+				value: 'blog.mturquetil.fr'
+			}, {
+				id: 1,
 				icon: 'email',
 				label: 'Email',
 				value: 'maxime@mturquetil.fr'
 			}, {
-				id: 1,
+				id: 2,
 				icon: 'phone',
 				label: 'Phone',
 				value: '06 02 31 91 01'
@@ -65,7 +70,7 @@ class RepositoryLayout extends Component {
 					<div className={styles.headerContainer}>
 						<div className={`${styles.topLine} margin-top-m`}>
 							<RepositoryTitle
-								owner="your-company"
+								owner="my-portfolio"
 								repository="maxime-turquetil"
 								className={styles.RepositoryTitle}
 							/>

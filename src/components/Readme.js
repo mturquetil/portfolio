@@ -9,11 +9,11 @@ class Readme extends Component {
 		this.state = {
 			shields: [{
 				label: 'disponibilité',
-				value: 'caen',
+				value: 'caen, rennes',
 				color: 'brightgreen'
 			}, {
-				label: 'status',
-				value: 'en recherche d\'emploi',
+				label: 'recherche',
+				value: 'alternance',
 				color: 'blueviolet'
 			}],
 

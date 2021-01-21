@@ -3,9 +3,9 @@ const hobbies = [{
 	alt: 'Escalade',
 	imagePath: '/hobbies/climbing.svg',
 }, {
-	title: 'Piano',
-	alt: 'Piano',
-	imagePath: '/hobbies/piano.svg',
+	title: 'Street Workout',
+	alt: 'Street Workout',
+	imagePath: '/hobbies/sw.svg',
 }, {
 	title: 'Programmation',
 	alt: 'Programmation',

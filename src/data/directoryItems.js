@@ -2,7 +2,7 @@ const directoryItems = [{
 	anchor: '#projects',
 	name: 'projects',
 	commit: 'fix: code readability',
-	time: '2 hour ago',
+	time: '2 hours ago',
 	type: 'folder'
 }, {
 	anchor: '#experiences',

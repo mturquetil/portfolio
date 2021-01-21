@@ -16,7 +16,7 @@ class IssuesPage extends Component {
 	render() {
 		return (
 			<div className={styles.issues}>
-				<h2 className={`${styles.title} margin-top-l`}>En recherche d'emploi <span className="grey-color">#1</span></h2>
+				<h2 className={`${styles.title} margin-top-l`}>En recherche d'alternance <span className="grey-color">#1</span></h2>
 				<IssueStatus className="margin-top-m" />
 				<IssuePost className="margin-top-l" />
 			</div>

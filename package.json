@@ -3,22 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 4000",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
-    "prod": "next build && pm2 start ecosystem.config.yaml",
+    "prod": "next build && next start",
     "export": "next export"
   },
   "dependencies": {
     "@primer/octicons-react": "^9.6.0",
     "dotenv": "^8.2.0",
     "next": "9.3.6",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.17",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-ga": "^2.7.0",
     "react-toast-notifications": "^2.4.0",
-    "sass": "^1.26.5"
+    "sass": "^1.32.0"
   },
   "devDependencies": {}
 }
